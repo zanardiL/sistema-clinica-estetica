@@ -2,9 +2,18 @@ package clients;
 
 public class Address {
     private String street;
-    private int number;
-    private String city;
+    private String number;
+    private String zipCode;
+    private String neighborhood;
     private String state;
+
+    public Address(String street, String number, String zipCode, String neighborhood, String state) {
+        this.street = street;
+        this.number = number;
+        this.zipCode = zipCode;
+        this.neighborhood = neighborhood;
+        this.state = state;
+    }
 
     public String getStreet() {
         return street;
@@ -14,20 +23,28 @@ public class Address {
         this.street = street;
     }
 
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 
-    public String getCity() {
-        return city;
+    public String getZipCode() {
+        return zipCode;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
+    }
+
+    public String getNeighborhood() {
+        return neighborhood;
+    }
+
+    public void setNeighborhood(String neighborhood) {
+        this.neighborhood = neighborhood;
     }
 
     public String getState() {
@@ -36,5 +53,16 @@ public class Address {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "street='" + street + '\'' +
+                ", number='" + number + '\'' +
+                ", zipCode='" + zipCode + '\'' +
+                ", neighborhood='" + neighborhood + '\'' +
+                ", state='" + state + '\'' +
+                '}';
     }
 }
