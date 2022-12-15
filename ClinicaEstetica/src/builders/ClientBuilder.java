@@ -1,8 +1,5 @@
 package builders;
 
-import clients.Address;
-import clients.Client;
-
 public class ClientBuilder {
     private String id;
     private String name;

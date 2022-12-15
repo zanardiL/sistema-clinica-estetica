@@ -1,6 +1,4 @@
-package clients;
-
-import builders.ClientBuilder;
+package builders;
 
 public class Client {
     private String id;

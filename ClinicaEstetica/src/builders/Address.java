@@ -1,4 +1,4 @@
-package clients;
+package builders;
 
 public class Address {
     private String street;

@@ -1,7 +1,5 @@
 package builders;
 
-import clients.Address;
-
 public class AddressBuilder {
     private String street;
     private String number;
