@@ -1,8 +1,5 @@
 package Login;
 
-
-import java.util.Calendar;
-import java.util.Date;
 import java.util.Scanner;
 
 public class Login {
@@ -40,8 +37,8 @@ public class Login {
         System.out.println("Digite sua senha com 4 digitos, 2 letra e 2 números");
         String passwordRecorded = sc.next();
 
-        if (loginRecorded.equals("Laís") && passwordRecorded.equals("12ab")) {
-            System.out.printf("| Usuário ' %s ' logado com sucesso.\n", loginRecorded);
+        if (loginRecorded.equals("Lais") && passwordRecorded.equals("12ab")) {
+            System.out.printf("Usuário(a) ' %s ' logado com sucesso.\n", loginRecorded);
             return true;
         } else {
             System.out.println("Login ou password inválidos!");
