@@ -7,6 +7,11 @@ public class Login {
     private String loginRecorded;
     private String passwordRecorded;
 
+
+    public Login(String loginRecorded, String passwordRecorded) {
+        this.loginRecorded = loginRecorded;
+        this.passwordRecorded = passwordRecorded;
+    }
     public String getLoginRecorded() {
         return loginRecorded;
     }
@@ -23,9 +28,12 @@ public class Login {
         this.passwordRecorded = passwordRecorded;
     }
 
-    public Login(String loginRecorded, String passwordRecorded) {
-        this.loginRecorded = loginRecorded;
-        this.passwordRecorded = passwordRecorded;
+    @Override
+    public String toString() {
+        return "Login{" +
+                "loginRecorded='" + loginRecorded + '\'' +
+                ", passwordRecorded='" + passwordRecorded + '\'' +
+                '}';
     }
 
     public static boolean authenticate() {

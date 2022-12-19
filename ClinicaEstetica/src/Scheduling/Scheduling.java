@@ -1,29 +1,33 @@
 package Scheduling;
 
+import builders.Client;
+
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 
 public class Scheduling {
 
-    private String name;
-    private LocalDate date ;
+    private Client client;
+    private LocalDate date;
+    private LocalTime horario;
     private String procedure;
 
-    public Scheduling(String name, int date, String procedure) {
-        this.name = name;
 
-        this.date = LocalDate.parse("yyyy,MM,dd");
+    public Scheduling(Client client, LocalDate date, LocalTime horario, String procedure) {
+        this.client = client;
+        this.date = date;
+        this.horario = horario;
         this.procedure = procedure;
     }
 
-    public String getName() {
-        return name;
+    public Client getClient() {
+        return client;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setClient(Client client) {
+        this.client = client;
     }
-
 
     public LocalDate getDate() {
         return date;
@@ -31,6 +35,14 @@ public class Scheduling {
 
     public void setDate(LocalDate date) {
         this.date = date;
+    }
+
+    public LocalTime getHorario() {
+        return horario;
+    }
+
+    public void setHorario(LocalTime horario) {
+        this.horario = horario;
     }
 
     public String getProcedure() {
@@ -43,11 +55,11 @@ public class Scheduling {
 
     @Override
     public String toString() {
-        return "Scheduling{" +
-                "name='" + name + '\'' +
-
-                ", date=" + date +
-                ", procedure='" + procedure + '\'' +
+        return "\nScheduling{" +
+                "\nclient=" + client +
+                "\n, date=" + date +
+                "\n, horario=" + horario +
+                "\n, procedure='" + procedure + '\'' +
                 '}';
     }
 }
