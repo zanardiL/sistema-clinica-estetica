@@ -6,13 +6,13 @@ import java.time.LocalDate;
 public class Scheduling {
 
     private String name;
-    private LocalDate date = LocalDate.parse("YYYY-MM-DD");
+    private LocalDate date ;
     private String procedure;
 
-    public Scheduling(String name,  LocalDate date, String procedure) {
+    public Scheduling(String name, int date, String procedure) {
         this.name = name;
 
-        this.date = date;
+        this.date = LocalDate.parse("yyyy,MM,dd");
         this.procedure = procedure;
     }
 
