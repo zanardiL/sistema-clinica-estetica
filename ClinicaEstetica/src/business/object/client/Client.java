@@ -1,4 +1,7 @@
-package builders;
+package business.object.client;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Client {
     private String id;
@@ -6,7 +9,6 @@ public class Client {
     private Address address;
     private String phone;
     private String email;
-
     public Client(String id, String name, Address address, String phone, String email) {
         this.id = id;
         this.name = name;

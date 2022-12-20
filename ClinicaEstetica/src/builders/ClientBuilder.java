@@ -1,5 +1,8 @@
 package builders;
 
+import business.object.client.Address;
+import business.object.client.Client;
+
 public class ClientBuilder {
     private String id;
     private String name;

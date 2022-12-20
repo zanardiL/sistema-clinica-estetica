@@ -1,4 +1,4 @@
-package builders;
+package business.object.client;
 
 public class Address {
     private String street;

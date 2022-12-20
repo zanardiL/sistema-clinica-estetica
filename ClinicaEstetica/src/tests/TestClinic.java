@@ -1,8 +1,8 @@
 package tests;
 
 import builders.AddressBuilder;
-import builders.Address;
-import builders.Client;
+import business.object.client.Address;
+import business.object.client.Client;
 import builders.ClientBuilder;
 import business.object.PackageDeals;
 

@@ -1,5 +1,7 @@
 package builders;
 
+import business.object.client.Address;
+
 public class AddressBuilder {
     private String street;
     private String number;
